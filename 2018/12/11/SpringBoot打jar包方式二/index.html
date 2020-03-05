@@ -20,19 +20,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="似水流年于昨日相忘于江湖">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  <meta name="description" content="方式二的打包方式和方式一的打包方式基本无恙，主要差别是指定了maven-assembly-plugin插件定制化打包 &lt;build&gt; &lt;finalName&gt;cyam-lzh&lt;&#x2F;finalName&gt; &lt;plugins&gt;         &lt;plugin&gt;             &lt;groupId&gt;org.springframewo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring boot配置pom打jar包--方式二">
+<meta property="og:url" content="http://yoursite.com/2018/12/11/SpringBoot%E6%89%93jar%E5%8C%85%E6%96%B9%E5%BC%8F%E4%BA%8C/index.html">
 <meta property="og:site_name" content="娃哈哈哎">
-<meta property="og:description" content="似水流年于昨日相忘于江湖">
+<meta property="og:description" content="方式二的打包方式和方式一的打包方式基本无恙，主要差别是指定了maven-assembly-plugin插件定制化打包 &lt;build&gt; &lt;finalName&gt;cyam-lzh&lt;&#x2F;finalName&gt; &lt;plugins&gt;         &lt;plugin&gt;             &lt;groupId&gt;org.springframewo">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-05T09:04:03.000Z">
-<meta property="article:modified_time" content="2020-03-05T09:04:03.182Z">
+<meta property="article:published_time" content="2018-12-11T03:34:21.000Z">
+<meta property="article:modified_time" content="2020-03-05T13:44:55.197Z">
 <meta property="article:author" content="蚂蚁会花呗">
+<meta property="article:tag" content="Spring Boot">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/about/">
+<link rel="canonical" href="http://yoursite.com/2018/12/11/SpringBoot%E6%89%93jar%E5%8C%85%E6%96%B9%E5%BC%8F%E4%BA%8C/">
 
 
 <script id="page-configurations">
@@ -40,12 +41,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false
+    isPost : true
   };
 </script>
 
-  <title>about | 娃哈哈哎
-  </title>
+  <title>Spring boot配置pom打jar包--方式二 | 娃哈哈哎</title>
   
 
 
@@ -155,44 +155,172 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
           <div class="content">
             
 
   <div class="posts-expand">
-    
-    
-    
-    <div class="post-block" lang="zh-CN">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/11/SpringBoot%E6%89%93jar%E5%8C%85%E6%96%B9%E5%BC%8F%E4%BA%8C/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="蚂蚁会花呗">
+      <meta itemprop="description" content="似水流年于昨日相忘于江湖">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="娃哈哈哎">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Spring boot配置pom打jar包--方式二
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">about
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
 
-<div class="post-meta">
+              <time title="创建时间：2018-12-11 11:34:21" itemprop="dateCreated datePublished" datetime="2018-12-11T11:34:21+08:00">2018-12-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-03-05 21:44:55" itemprop="dateModified" datetime="2020-03-05T21:44:55+08:00">2020-03-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Spring-Boot/" itemprop="url" rel="index"><span itemprop="name">Spring Boot</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>方式二的打包方式和方式一的打包方式基本无恙，主要差别是指定了maven-assembly-plugin插件定制化打包</p>
+<pre><code>&lt;build&gt;
+&lt;finalName&gt;cyam-lzh&lt;/finalName&gt;
+&lt;plugins&gt;
+        &lt;plugin&gt;
+            &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+            &lt;artifactId&gt;spring-boot-maven-plugin&lt;/artifactId&gt;
+        &lt;/plugin&gt;    
+        &lt;!-- 使用该插件仅仅指定编译java时的版本--&gt;
+        &lt;plugin&gt;
+            &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;  
+            &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;  
+            &lt;configuration&gt; 
+                &lt;!-- 指定编译时使用的jdk版本--&gt; 
+                &lt;source&gt;1.8&lt;/source&gt;  
+                &lt;target&gt;1.8&lt;/target&gt;  
+            &lt;/configuration&gt;  
+        &lt;/plugin&gt;
+        &lt;!-- 使用maven-assembly-plugin插件定制化打包--&gt;
+        &lt;plugin&gt;
+            &lt;artifactId&gt;maven-assembly-plugin&lt;/artifactId&gt;
+            &lt;configuration&gt;
+                &lt;archive&gt;
+                    &lt;manifest&gt;
+                        &lt;mainClass&gt;com.boot.Application&lt;/mainClass&gt;
+                    &lt;/manifest&gt;
+                &lt;/archive&gt;
+                &lt;descriptorRefs&gt;
+                    &lt;descriptorRef&gt;
+                        jar-with-dependencies
+                    &lt;/descriptorRef&gt;
+                &lt;/descriptorRefs&gt;
+            &lt;/configuration&gt;
+        &lt;/plugin&gt;    
+    &lt;/plugins&gt;
+    &lt;resources&gt;
+        &lt;!--指定将src/main/resources/资源目录下的所有文件都打入 --&gt;
+        &lt;resource&gt;
+            &lt;directory&gt;src/main/resources/&lt;/directory&gt;
+            &lt;includes&gt;
+                &lt;include&gt;**/*.*&lt;/include&gt;
+            &lt;/includes&gt;
+        &lt;/resource&gt;
+    &lt;/resources&gt;
+  &lt;/build&gt;</code></pre><a id="more"></a>
+
+<p>当然，你也可以指定使用另外一种打包插件来替换掉maven-assembly-plugin</p>
+<pre><code>&lt;plugin&gt;
+    &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+    &lt;artifactId&gt;maven-jar-plugin&lt;/artifactId&gt;
+    &lt;configuration&gt;
+        &lt;archive&gt;
+            &lt;manifest&gt;
+                &lt;addClasspath&gt;true&lt;/addClasspath&gt;
+                &lt;mainClass&gt;com.boot.Application&lt;/mainClass&gt;
+                &lt;classpathPrefix&gt;
+                    dependency/
+                &lt;/classpathPrefix&gt;
+            &lt;/manifest&gt;
+        &lt;/archive&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;</code></pre><p>以上两种插件，根据个人喜好选择相应插件，但是无论选择哪种插件，<br>如果在项目中你引入了本地jar包，并且使用了<font color="red">《Maven 引入本地jar包的几种方式》</font><br>该教程中的方式二引入。你需要在resources标签内加入以下代码，来保证引入的本地jar包被成功的打入<br>最终的jar包中，如果是使用了方式一，则不需要加入以下代码。 </p>
+<pre><code>&lt;resource&gt;
+    &lt;!-- 指定打入jar包后的位置 --&gt;
+    &lt;targetPath&gt;lib/&lt;/targetPath&gt;
+    &lt;!-- 本地jar包存放的资源目录 --&gt;
+    &lt;directory&gt;libs/&lt;/directory&gt;
+    &lt;!-- 包含所有后缀为.jar的文件 --&gt;
+    &lt;includes&gt;
+        &lt;include&gt;**/*.jar&lt;/include&gt;
+    &lt;/includes&gt;
+&lt;/resource&gt;</code></pre>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Spring-Boot/" rel="tag"># Spring Boot</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018/11/21/Mysql%E5%AF%BC%E5%85%A5%E6%95%B0%E6%8D%AE%E6%8A%A51067%E7%9A%84%E9%94%99%E8%AF%AF/" rel="prev" title="Mysql导入数据报1067的错误">
+      <i class="fa fa-chevron-left"></i> Mysql导入数据报1067的错误
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2018/12/11/SpringBoot%E6%89%93jar%E5%8C%85%E6%96%B9%E5%BC%8F%E4%B8%80/" rel="next" title="Spring boot配置pom打jar包--方式一">
+      Spring boot配置pom打jar包--方式一 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
   </div>
 
 
